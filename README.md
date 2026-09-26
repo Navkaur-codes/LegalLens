@@ -4,7 +4,7 @@
 
 Built for the **PromptWars — Legal Assistance & Access** challenge.
 
-**Live demo:** _add your Render URL here_ · Try **View sample brief** for an instant demo on a fictional agreement.
+**Live demo:** https://legallens-uxoi.onrender.com · Try **View sample brief** for an instant demo on a fictional agreement.
 
 > **Disclaimer:** LegalLens provides general legal information to help you understand your document. It is not legal advice and does not assess whether any clause is valid or enforceable. For decisions, consult a qualified lawyer or your HR team.
 
