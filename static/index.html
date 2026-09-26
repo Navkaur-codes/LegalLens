@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LegalLens — Personal Legal Brief</title>
+  <meta name="description" content="Understand your employment agreement with a plain-language, source-grounded brief.">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1f3a'/%3E%3Ccircle cx='14' cy='14' r='7' fill='none' stroke='%23d9a441' stroke-width='3'/%3E%3Cpath d='M19 19l7 7' stroke='%23d9a441' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="LegalLens home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><circle cx="14" cy="14" r="7"/><path d="M19 19l7 7"/></svg>
+        <span class="brand-name">Legal<span>Lens</span></span>
+      </a>
+      <span class="header-pill">Legal information · not legal advice</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Upload view ============ -->
+    <section id="upload-view" class="view" aria-labelledby="hero-title">
+      <div class="hero-band">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">For employees in India</p>
+            <h1 id="hero-title">Understand your employment agreement <em>before you sign.</em></h1>
+            <p class="lede">Turn your offer letter or employment agreement into a clear personal brief: key terms,
+              responsibilities and deadlines stated in your document, and clauses worth clarifying. Every point
+              links back to the exact page and text it came from.</p>
+
+            <div class="card upload-card">
+              <div id="mock-notice" class="alert alert-demo" hidden>
+                <strong>AI analysis is off (mock mode).</strong> Uploads return a fixed placeholder brief
+                for the fictional sample, not an analysis of your file.
+              </div>
+              <form id="upload-form" novalidate>
+                <label id="dropzone" class="dropzone" for="file-input">
+                  <span class="dropzone-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 17v-6M9 14l3-3 3 3"/></svg>
+                  </span>
+                  <span class="dropzone-text">
+                    <span class="dropzone-title">Drop your PDF here or <span class="link-text">browse</span></span>
+                    <span class="limits">
+                      Text-based PDF · up to <span data-limit="max_file_mb">…</span> MB ·
+                      <span data-limit="max_pages">…</span> pages ·
+                      <span data-limit="max_chars">…</span> characters
+                    </span>
+                  </span>
+                  <span id="file-name" class="dropzone-file" aria-live="polite"></span>
+                  <input id="file-input" class="visually-hidden" type="file" name="file" accept="application/pdf,.pdf">
+                </label>
+                <div id="upload-error" class="alert alert-error" role="alert" hidden></div>
+                <div class="actions">
+                  <button id="generate-btn" class="btn btn-primary btn-lg" type="submit" disabled>
+                    Generate my brief
+                    <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                  </button>
+                  <button id="sample-btn" class="btn btn-ghost btn-lg" type="button">View sample brief</button>
+                </div>
+                <p class="privacy-note">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+                  Processed in memory and never stored.
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!-- Decorative preview of a brief (static text, hidden from assistive tech) -->
+          <div class="hero-preview" aria-hidden="true">
+            <div class="preview-window">
+              <div class="preview-bar"><span></span><span></span><span></span><em>Your document brief</em></div>
+              <div class="preview-tabs"><b>Overview</b><i>Responsibilities</i><i>Clauses to Review</i></div>
+              <div class="preview-card">
+                <p class="preview-label">Notice period</p>
+                <p class="preview-value">60 days after confirmation</p>
+                <p class="preview-badge ok">✓ Source verified · Page 1</p>
+              </div>
+              <div class="preview-card">
+                <p class="preview-label">Service bond</p>
+                <p class="preview-value">24 months · training cost</p>
+                <p class="preview-quote">“…shall pay the Company INR 1,50,000 towards training costs…”</p>
+              </div>
+              <div class="preview-card small">
+                <p class="preview-label">Question to ask HR</p>
+                <p class="preview-text">How exactly is the amount reduced for months served?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="features" aria-label="What your brief includes">
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+            <h2>Overview</h2>
+            <p>A plain-language summary with parties, role, pay, probation, notice and other key terms.</p>
+          </li>
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+            <h2>Responsibilities &amp; Deadlines</h2>
+            <p>Responsibilities stated in your document, with notice periods, dates and time-bound duties.</p>
+          </li>
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg></span>
+            <h2>Clauses to Review</h2>
+            <p>Clauses worth clarifying, why they may matter, and neutral questions to ask HR or a lawyer.</p>
+          </li>
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span>
+            <h2>Action Plan</h2>
+            <p>A deadlines checklist, missing or unclear points, next steps and all your questions in one list.</p>
+          </li>
+        </ul>
+
+        <ul class="trust" aria-label="Why you can trust the brief">
+          <li><strong>Source-linked</strong> Every point cites a page and quote</li>
+          <li><strong>Verified</strong> Quotes are checked against your PDF</li>
+          <li><strong>Private</strong> Files are never stored</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Loading view ============ -->
+    <section id="loading-view" class="view container" hidden aria-labelledby="loading-title">
+      <div class="card loading-card">
+        <div class="spinner" aria-hidden="true"></div>
+        <h2 id="loading-title">Preparing your brief</h2>
+        <p id="loading-step" class="visually-hidden" role="status" aria-live="polite">Reading document…</p>
+        <ol id="loading-steps" class="loading-steps" aria-hidden="true">
+          <li>Reading your document</li>
+          <li>Analysing clauses</li>
+          <li>Verifying sources</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Results view ============ -->
+    <section id="results-view" class="view" hidden aria-labelledby="results-title">
+      <div class="results-band">
+        <div class="container results-head">
+          <div>
+            <p class="eyebrow">Personal legal brief</p>
+            <h1 id="results-title" class="results-title">Your document brief</h1>
+            <p id="doc-meta" class="doc-meta"></p>
+          </div>
+          <div class="actions no-print">
+            <button id="print-btn" class="btn btn-ghost-light" type="button">
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg>
+              Download brief
+            </button>
+            <button id="restart-btn" class="btn btn-accent" type="button">Analyse another</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container results-grid">
+        <aside class="summary-panel" aria-label="Document summary">
+          <div class="card">
+            <h2 class="aside-title">At a glance</h2>
+            <dl class="stats">
+              <div><dt>Key terms</dt><dd id="stat-terms">0</dd></div>
+              <div><dt>Responsibilities</dt><dd id="stat-resp">0</dd></div>
+              <div><dt>Clauses to review</dt><dd id="stat-clauses">0</dd></div>
+              <div><dt>Points to clarify</dt><dd id="stat-missing">0</dd></div>
+            </dl>
+            <div class="verify-meter">
+              <p class="verify-label"><span>Sources verified</span><strong id="stat-verified">0 / 0</strong></p>
+              <progress id="verified-progress" max="1" value="0" aria-label="Share of sources verified"></progress>
+            </div>
+            <p id="verification-note" class="aside-note"></p>
+          </div>
+        </aside>
+
+        <div class="results-main">
+          <div id="demo-banner" class="alert alert-demo" hidden>
+            <strong>Demonstration result — fictional document.</strong>
+            This brief was prepared for a made-up sample agreement, not for a file you uploaded.
+          </div>
+          <div id="mock-banner" class="alert alert-demo" hidden>
+            <strong>Placeholder result — AI analysis is off (mock mode).</strong>
+            This is fixed demo content, not an analysis of your file, so its sources may not match your document.
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Brief sections">
+            <button class="tab" role="tab" id="tab-overview" aria-controls="panel-overview" aria-selected="true">Overview</button>
+            <button class="tab" role="tab" id="tab-responsibilities" aria-controls="panel-responsibilities" aria-selected="false" tabindex="-1">Responsibilities &amp; Deadlines <span class="count" id="count-responsibilities"></span></button>
+            <button class="tab" role="tab" id="tab-clauses" aria-controls="panel-clauses" aria-selected="false" tabindex="-1">Clauses to Review <span class="count" id="count-clauses"></span></button>
+            <button class="tab" role="tab" id="tab-action" aria-controls="panel-action" aria-selected="false" tabindex="-1">Action Plan</button>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview" tabindex="0">
+            <h2 class="print-heading">Overview</h2>
+            <div id="overview-content"></div>
+          </div>
+          <div class="panel" role="tabpanel" id="panel-responsibilities" aria-labelledby="tab-responsibilities" tabindex="0" hidden>
+            <h2 class="print-heading">Responsibilities &amp; Deadlines</h2>
+            <p class="panel-intro">Responsibilities stated in your document.</p>
+            <div id="responsibilities-content" class="card-list"></div>
+          </div>
+          <div class="panel" role="tabpanel" id="panel-clauses" aria-labelledby="tab-clauses" tabindex="0" hidden>
+            <h2 class="print-heading">Clauses to Review</h2>
+            <p class="panel-intro">Clauses you may want to understand or clarify, with questions you could ask HR or a qualified lawyer.</p>
+            <div id="clauses-content" class="card-list"></div>
+          </div>
+          <div class="panel" role="tabpanel" id="panel-action" aria-labelledby="tab-action" tabindex="0" hidden>
+            <h2 class="print-heading">Action Plan</h2>
+            <p class="panel-intro">A practical checklist to prepare before you sign or discuss the document with HR or a lawyer.</p>
+
+            <div class="plan-grid">
+              <section class="card plan-section" aria-labelledby="checklist-title">
+                <h3 id="checklist-title" class="plan-title">Dates &amp; deadlines checklist</h3>
+                <ul id="plan-checklist" class="checklist"></ul>
+              </section>
+              <section class="card plan-section" aria-labelledby="steps-title">
+                <h3 id="steps-title" class="plan-title">Suggested next steps</h3>
+                <ol id="plan-steps" class="steps-list"></ol>
+              </section>
+            </div>
+
+            <h3 class="section-title">Missing or unclear information</h3>
+            <div id="plan-missing" class="card-list"></div>
+
+            <section class="card plan-section questions-section" aria-labelledby="questions-title">
+              <div class="plan-head">
+                <h3 id="questions-title" class="plan-title">Questions to take to HR or a lawyer</h3>
+                <button id="copy-questions" class="btn btn-ghost btn-sm no-print" type="button">
+                  <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+                  Copy questions
+                </button>
+              </div>
+              <ol id="plan-questions" class="question-groups"></ol>
+              <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p id="disclaimer" class="disclaimer"><strong>Disclaimer:</strong> LegalLens provides general legal information to help you understand your document. It is not legal advice and does not assess whether any clause is valid or enforceable. For decisions, consult a qualified lawyer or your HR team.</p>
+      <p class="footer-brand">LegalLens · Built for PromptWars — Legal Assistance &amp; Access</p>
+    </div>
+  </footer>
+</body>
+</html>

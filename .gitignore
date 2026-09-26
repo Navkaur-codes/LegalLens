@@ -1,0 +1,26 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node (no dependencies are installed, but keep the repo clean if any are)
+node_modules/
+
+# Local tooling and private working notes (not part of the submission)
+.claude/
+CLAUDE.md
+progress.md
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

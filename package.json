@@ -1,0 +1,9 @@
+{
+  "name": "legallens-frontend",
+  "private": true,
+  "description": "Frontend unit tests for LegalLens (no dependencies; uses Node's built-in test runner).",
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"tests/js/*.test.js\""
+  }
+}

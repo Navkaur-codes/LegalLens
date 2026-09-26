@@ -1,0 +1,357 @@
+{
+  "is_employment_document": true,
+  "overview": {
+    "summary": "This is an employment agreement between a fictional company, Example Technologies Private Limited, and A. Sample for the role of Software Engineer in Bengaluru, starting on 1 July 2026. It sets out pay, a six-month probation, working hours, leave and joining formalities. It also includes a 24-month service bond, a 60-day notice period after confirmation, confidentiality and intellectual property terms, and restrictions on other work and on joining competitors after leaving. The document asks for a signed copy within 5 days of 10 June 2026.",
+    "document_type": "Employment Agreement",
+    "employer": "Example Technologies Private Limited (fictional)",
+    "employee": "A. Sample (fictional)",
+    "key_terms": [
+      {
+        "term": "Role and start date",
+        "value": "Software Engineer, joining 1 July 2026 in Bengaluru",
+        "explanation": "The job title, team and the date and place the document says employment begins.",
+        "source": {
+          "page": 1,
+          "section": "1. Position and Start Date",
+          "quote": "The Employee shall join the Company on 1 July 2026 at the Bengaluru office.",
+          "verified": true
+        }
+      },
+      {
+        "term": "Compensation",
+        "value": "INR 9,00,000 per annum (cost to company)",
+        "explanation": "Cost to company (CTC) is the total yearly cost to the employer; take-home pay is usually lower after deductions. The detailed breakdown is said to be in Annexure A.",
+        "source": {
+          "page": 1,
+          "section": "2. Compensation",
+          "quote": "The Employee shall receive a total cost to company of INR 9,00,000 per annum",
+          "verified": true
+        }
+      },
+      {
+        "term": "Probation",
+        "value": "6 months, extendable by up to 3 months",
+        "explanation": "An initial trial period. The document allows the company to extend it, and a shorter notice period applies during it.",
+        "source": {
+          "page": 1,
+          "section": "3. Probation",
+          "quote": "The Employee shall be on probation for a period of six months from the date of joining.",
+          "verified": true
+        }
+      },
+      {
+        "term": "Notice period",
+        "value": "15 days during probation; 60 days after confirmation",
+        "explanation": "How much written notice either side gives to end employment. It changes once probation is confirmed.",
+        "source": {
+          "page": 1,
+          "section": "8. Notice Period and Resignation",
+          "quote": "After confirmation, either party may terminate this Agreement by giving 60 days written notice.",
+          "verified": true
+        }
+      },
+      {
+        "term": "Service bond",
+        "value": "24 months; INR 1,50,000 reduced pro-rata",
+        "explanation": "The document states a minimum service period and an amount towards training costs if the employee resigns earlier, reduced for months already served.",
+        "source": {
+          "page": 1,
+          "section": "7. Service Bond",
+          "quote": "The Employee agrees to serve the Company for a minimum period of 24 months from the date of joining.",
+          "verified": true
+        }
+      },
+      {
+        "term": "Paid leave",
+        "value": "18 days per year; carry forward up to 30 days",
+        "explanation": "Paid days off each calendar year, added on a pro-rata basis, with a cap on how much unused leave can be carried forward.",
+        "source": {
+          "page": 1,
+          "section": "5. Leave",
+          "quote": "The Employee is entitled to 18 days of paid leave per calendar year",
+          "verified": true
+        }
+      },
+      {
+        "term": "Working hours and location",
+        "value": "9 hours a day (incl. 1-hour break), 5 days a week; transferable within India",
+        "explanation": "Normal hours, with the possibility of additional hours, and a clause allowing transfer to other offices or client locations in India.",
+        "source": {
+          "page": 1,
+          "section": "4. Working Hours and Location",
+          "quote": "The Company may transfer the Employee to any of its offices or client locations in India.",
+          "verified": true
+        }
+      }
+    ]
+  },
+  "responsibilities": [
+    {
+      "title": "Return the signed agreement",
+      "description": "The document asks for a signed copy to be returned to confirm acceptance.",
+      "category": "deadline",
+      "timing": "Within 5 days of 10 June 2026",
+      "source": {
+        "page": 2,
+        "section": "15. Acceptance",
+        "quote": "Please sign and return a copy of this Agreement within 5 days of the date of this Agreement",
+        "verified": true
+      }
+    },
+    {
+      "title": "Submit joining documents",
+      "description": "Copies of educational certificates, previous relieving letters and identity documents are to be submitted. The appointment is also stated to depend on background verification.",
+      "category": "deadline",
+      "timing": "Within 7 days of joining",
+      "source": {
+        "page": 1,
+        "section": "6. Joining Formalities",
+        "quote": "identity documents within 7 days of joining",
+        "verified": true
+      }
+    },
+    {
+      "title": "Join on the start date",
+      "description": "The document states the joining date and location.",
+      "category": "date",
+      "timing": "1 July 2026, Bengaluru office",
+      "source": {
+        "page": 1,
+        "section": "1. Position and Start Date",
+        "quote": "The Employee shall join the Company on 1 July 2026 at the Bengaluru office.",
+        "verified": true
+      }
+    },
+    {
+      "title": "Give notice before leaving",
+      "description": "Written notice is stated as 15 days during probation and 60 days after confirmation.",
+      "category": "notice",
+      "timing": "15 days (probation) / 60 days (after confirmation)",
+      "source": {
+        "page": 1,
+        "section": "3. Probation",
+        "quote": "During probation, either party may terminate this Agreement by giving 15 days written notice.",
+        "verified": true
+      }
+    },
+    {
+      "title": "Keep information confidential",
+      "description": "Confidential information of the company and its clients is to be kept confidential during employment and for three years after leaving.",
+      "category": "obligation",
+      "timing": "During employment and 3 years after leaving",
+      "source": {
+        "page": 2,
+        "section": "9. Confidentiality",
+        "quote": "during employment and for a period of three years after leaving the Company.",
+        "verified": true
+      }
+    },
+    {
+      "title": "Get consent before other paid work",
+      "description": "Other employment, business, part-time or freelance work is stated to need the company's prior written consent.",
+      "category": "obligation",
+      "timing": "During employment",
+      "source": {
+        "page": 2,
+        "section": "11. Other Employment",
+        "quote": "without the prior written consent of the Company.",
+        "verified": true
+      }
+    },
+    {
+      "title": "Return company property",
+      "description": "The laptop, access card and all other company property are to be returned.",
+      "category": "deadline",
+      "timing": "On the last working day",
+      "source": {
+        "page": 2,
+        "section": "13. Return of Property and Final Settlement",
+        "quote": "On the last working day, the Employee shall return the laptop, access card and all other Company property.",
+        "verified": true
+      }
+    },
+    {
+      "title": "Final settlement timeline",
+      "description": "The document states when the company will process the full and final settlement after exit.",
+      "category": "date",
+      "timing": "Within 45 days of the last working day",
+      "source": {
+        "page": 2,
+        "section": "13. Return of Property and Final Settlement",
+        "quote": "The full and final settlement shall be processed within 45 days of the last working day.",
+        "verified": true
+      }
+    }
+  ],
+  "clauses_to_review": [
+    {
+      "title": "Service bond and training cost",
+      "topic": "bond",
+      "what_it_says": "If the employee resigns before completing 24 months, the document states an amount of INR 1,50,000 towards training costs, reduced for months already served.",
+      "why_it_matters": "It can affect the cost of changing jobs in the first two years, so it helps to know exactly how the amount is calculated and when it applies.",
+      "questions_to_ask": [
+        "What training does the INR 1,50,000 amount relate to, and is there a written breakdown?",
+        "How exactly is the amount reduced for months served?",
+        "Does this apply if the company ends the employment, or only if I resign?"
+      ],
+      "source": {
+        "page": 1,
+        "section": "7. Service Bond",
+        "quote": "INR 1,50,000 towards training costs, reduced proportionately for the months already served.",
+        "verified": true
+      }
+    },
+    {
+      "title": "Non-compete after leaving",
+      "topic": "non_compete",
+      "what_it_says": "For 12 months after leaving, the document restricts joining or working for any competitor of the company in India, and soliciting its employees or clients.",
+      "why_it_matters": "It may influence future job options, so it is useful to understand how \"competitor\" is defined and how the company applies this clause.",
+      "questions_to_ask": [
+        "Which companies are considered competitors under this clause?",
+        "Is there a list or definition of competitor I can see in writing?",
+        "Would a lawyer suggest clarifying this clause before I sign?"
+      ],
+      "source": {
+        "page": 2,
+        "section": "12. Non-Compete and Non-Solicitation",
+        "quote": "the Employee shall not join or work for any competitor of the Company in India.",
+        "verified": true
+      }
+    },
+    {
+      "title": "Notice period and payment in lieu",
+      "topic": "termination",
+      "what_it_says": "After confirmation the notice period is 60 days. Accepting basic salary instead of serving notice is stated to be at the company's sole discretion.",
+      "why_it_matters": "Notice length and buy-out options affect how quickly you can move to a new role.",
+      "questions_to_ask": [
+        "In practice, how are notice buy-out requests handled?",
+        "Can unused leave be adjusted against the notice period?"
+      ],
+      "source": {
+        "page": 1,
+        "section": "8. Notice Period and Resignation",
+        "quote": "The Company may, at its sole discretion, accept payment of basic salary in lieu of the notice period.",
+        "verified": true
+      }
+    },
+    {
+      "title": "Ownership of work outside working hours",
+      "topic": "ip",
+      "what_it_says": "Work created during the period of employment belongs to the company, whether or not it was created during working hours.",
+      "why_it_matters": "If you work on personal projects, open-source contributions or side ideas, it helps to know how this clause applies to them.",
+      "questions_to_ask": [
+        "Does this cover personal projects unrelated to the company's business?",
+        "Can I list existing personal projects to exclude them in writing?"
+      ],
+      "source": {
+        "page": 2,
+        "section": "10. Intellectual Property",
+        "quote": "whether or not during working hours, shall belong exclusively to the Company.",
+        "verified": true
+      }
+    },
+    {
+      "title": "Transfer and additional hours",
+      "topic": "working_terms",
+      "what_it_says": "The document allows transfer to any office or client location in India and states that additional hours may be required when business needs require.",
+      "why_it_matters": "Relocation and extra hours can affect personal plans, so it may help to understand how often these apply and what support is offered.",
+      "questions_to_ask": [
+        "Is relocation support provided if I am transferred to another city?",
+        "How are additional working hours recorded or compensated?"
+      ],
+      "source": {
+        "page": 1,
+        "section": "4. Working Hours and Location",
+        "quote": "The Employee may be required to work additional hours when business needs require.",
+        "verified": true
+      }
+    },
+    {
+      "title": "Extension of probation",
+      "topic": "working_terms",
+      "what_it_says": "The company may extend the six-month probation by up to three months at its discretion.",
+      "why_it_matters": "The shorter probation notice period and confirmation timing depend on when probation ends.",
+      "questions_to_ask": [
+        "On what basis is probation extended, and will I be told in writing?",
+        "How is confirmation communicated at the end of probation?"
+      ],
+      "source": {
+        "page": 1,
+        "section": "3. Probation",
+        "quote": "The Company may extend the probation period by up to three months at its discretion.",
+        "verified": true
+      }
+    }
+  ],
+  "action_plan": {
+    "missing_or_unclear": [
+      {
+        "title": "Salary breakdown not included",
+        "detail": "The document says the detailed salary structure is in Annexure A, but Annexure A is not part of this document.",
+        "source": {
+          "page": 1,
+          "section": "2. Compensation",
+          "quote": "The detailed salary structure is set out in Annexure A.",
+          "verified": true
+        }
+      },
+      {
+        "title": "Bonus criteria not stated",
+        "detail": "A performance bonus is mentioned, but no amount, criteria or timing is given.",
+        "source": {
+          "page": 1,
+          "section": "2. Compensation",
+          "quote": "Any performance bonus is at the sole discretion of the Company.",
+          "verified": true
+        }
+      },
+      {
+        "title": "Training covered by the bond not described",
+        "detail": "The service bond refers to training costs, but the document does not describe what training is provided.",
+        "source": {
+          "page": 1,
+          "section": "7. Service Bond",
+          "quote": "INR 1,50,000 towards training costs",
+          "verified": true
+        }
+      },
+      {
+        "title": "\"Misconduct\" not defined",
+        "detail": "Termination without notice is linked to misconduct, but the document does not define what counts as misconduct.",
+        "source": {
+          "page": 1,
+          "section": "8. Notice Period and Resignation",
+          "quote": "The Company may terminate this Agreement without notice in case of misconduct.",
+          "verified": true
+        }
+      },
+      {
+        "title": "\"Competitor\" not defined",
+        "detail": "The 12-month restriction applies to any competitor in India, but the document does not say which companies count as competitors.",
+        "source": {
+          "page": 2,
+          "section": "12. Non-Compete and Non-Solicitation",
+          "quote": "the Employee shall not join or work for any competitor of the Company in India.",
+          "verified": true
+        }
+      }
+    ],
+    "next_steps": [
+      "Ask HR for Annexure A so you can see the full salary breakdown before signing.",
+      "Request written clarification of how the service bond amount is calculated and what training it covers.",
+      "Ask how \"competitor\" and \"misconduct\" are defined, and whether examples can be provided in writing.",
+      "Note the acceptance deadline: the document asks for a signed copy within 5 days of 10 June 2026.",
+      "Keep a copy of the signed agreement and any written clarifications for your records.",
+      "If any clause remains unclear, consider consulting a qualified lawyer before signing."
+    ]
+  },
+  "document": {
+    "filename": "sample_agreement.pdf",
+    "pages": 2,
+    "characters": 4056
+  },
+  "is_demo": true,
+  "is_mock": true,
+  "verification_note": "Source verification checks that the quoted text appears in your document. It does not confirm that the explanation is legally accurate.",
+  "disclaimer": "LegalLens provides general legal information to help you understand your document. It is not legal advice and does not assess whether any clause is valid or enforceable. For decisions, consult a qualified lawyer or your HR team."
+}

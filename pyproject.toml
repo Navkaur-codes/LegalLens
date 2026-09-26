@@ -1,0 +1,37 @@
+[project]
+name = "legallens"
+version = "1.0.0"
+description = "Source-grounded personal briefs for Indian employment agreements (PromptWars: Legal Assistance & Access)."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+# pycodestyle, pyflakes, isort, bugbear, pyupgrade, simplify, naming, security (bandit), return/print hygiene
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "N", "S", "RET", "T20"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]          # assert is how pytest works
+"scripts/**" = ["T201"]        # scripts report progress with print()
+"app/prompts.py" = ["E501"]    # prompt prose: wrapping lines would change the text sent to the model
+
+[tool.ruff.lint.flake8-bugbear]
+# FastAPI's dependency-injection idiom uses calls in argument defaults.
+extend-immutable-calls = ["fastapi.Depends", "fastapi.File"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = ["ignore:Using `httpx` with `starlette.testclient`"]
+
+[tool.coverage.run]
+source = ["app"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 95
